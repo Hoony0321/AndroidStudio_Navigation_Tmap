@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!-- 배경 레이아웃 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:background="#89a5ea">
+
+        <!-- 장소 UI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 타입 선택 UI -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 자동차 선택 UI -->
+
+                <Button
+                    android:id="@+id/select_car_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/car_button"
+                    android:textStyle="bold"/>
+
+                <!-- 대중교통 선택 UI -->
+                <Button
+                    android:id="@+id/select_bus_btn"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bus_button" />
+
+                <!-- 보행자 선택 UI -->
+                <Button
+                    android:id="@+id/select_pedestrian_btn"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pedestrian_button" />
+
+            </LinearLayout>
+
+            <!-- 검색 출발지 검색창 & 출발/도착지 바꾸기 버튼 UI -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:text="출발"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/inputStart_editText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/change_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/change_btn"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+
+            <!-- 검색 도착지 검색 창& clear 버튼 UI -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:text="도착"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/inputEnd_editText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+                <Button
+                    android:id="@+id/findPath_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/findpath_btn"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!-- 지도맵 배경 레이아웃-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <!-- 지도맵 레이아웃 -->
+        <LinearLayout
+            android:id="@+id/linearLayoutTmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
+        <!-- 현위치 표시 버튼 -->
+        <Button
+            android:id="@+id/showCurPosition_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "현위치 표시"
+            android:layout_gravity="bottom" />
+
+        <!-- 경로 안내 자세한 정보 출력 버튼 -->
+        <Button
+            android:id="@+id/showDetailInfo_Path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Detail"
+            android:layout_gravity="bottom|right"/>
+
+        <!-- 검색 결과창 -->
+        <ListView
+            android:id="@+id/searchResultList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
