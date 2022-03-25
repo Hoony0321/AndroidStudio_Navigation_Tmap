@@ -58,7 +58,7 @@ TTS & STT 기능이 들어가 음성 인식 및 텍스트 듣기가 가능합니
 이에 Marker마다 다른 id를 부여해주고 이 문제를 해결했습니다.
 
 이런 사소한 착각 하나로 인해 저는 많은 시간을 소비하였습니다. 이로 인해 사용하는 Method에 대한 정확한 파악이 필수라는 교훈을 얻었습니다.
-![KakaoTalk_20220325_091637088_01](https://user-images.githubusercontent.com/50730897/160031523-a32e9791-52d5-455b-bb3e-0fd3cdd0c0f8.jpg)
+![KakaoTalk_20220325_091637088_01](https://user-images.githubusercontent.com/50730897/160031523-a32e9791-52d5-455b-bb3e-0fd3cdd0c0f8.jpg){width:100dp; height:100dp;}
 
 
 # 프로젝트 시연 영상
