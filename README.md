@@ -32,9 +32,9 @@ TTS & STT 기능이 들어가 음성 인식 및 텍스트 듣기가 가능합니
 
 
 # 화면
-<img src="https://user-images.githubusercontent.com/50730897/163183414-6b91f5c5-8df1-4fca-8df7-983621c883fd.jpg"  width="700" height="370"/>
-![TMap_중심지찾기](https://user-images.githubusercontent.com/50730897/163183427-e0b82d2a-2b8b-4bb8-8f08-94d9d21c98c1.jpg)
-![TMap_중심지찾기](https://user-images.githubusercontent.com/50730897/163183479-5a3c0355-e483-4b02-9da4-9e0ff5e49d0d.jpg)
+<img src="https://user-images.githubusercontent.com/50730897/163183414-6b91f5c5-8df1-4fca-8df7-983621c883fd.jpg"  width="360" height="600"/>
+<img src="https://user-images.githubusercontent.com/50730897/163183427-e0b82d2a-2b8b-4bb8-8f08-94d9d21c98c1.jpg"  width="360" height="600"/>
+<img src="https://user-images.githubusercontent.com/50730897/163184229-3eff4b75-38be-4f97-a30d-62ad2833c908.jpg"  width="360" height="600"/>
 
 
 # 프로젝트 시연 영상
