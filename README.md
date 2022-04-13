@@ -31,33 +31,11 @@ TTS & STT 기능이 들어가 음성 인식 및 텍스트 듣기가 가능합니
 
 
 
-# 발생문제 및 해결방법
+# 화면
 
-## 1. Marker 다중 생성
-지도 API를 통해 길찾기 기능, 중심지 찾기 기능을 구현하기 위해선 여러 위치에 Marker 표시를 해야했습니다. 
-
-그래서 TMapMarkerItem 객체를 만들어 이를  TMapView 객체에 추가해줬습니다. 
-
-
-하지만 이상하게 Marker를 추가하면 기존에 있던 Marker가 사라졌습니다. 
-
-처음에는 동일한 Marker 객체가 중복되어 사용되어서 기존의 Marker가 사라졌다고 생각했습니다.
-
-그래서 아예 Array를 만들어 매번 new TMapMarkerItem() 객체를 넣어주었습니다. 
-
-하지만 서로 다른 MarkerItem임에도 불구하고 기존의 Marker들이 사라졌습니다.
-
-이에 저는 동일한 Marker 객체의 중복 사용 문제가 아닌 Marker 객체를 지도에 추가될 때가 문제라고 생각했습니다.
-
-그래서 Marker를 MapView에 추가해주는 addMarkerItem Method를 자세히 살펴봤습니다.
-
-알고 보니 첫 번째 parameter가 Marker의 ‘name’이 아닌 ‘id’였습니다. 
-
-동일한 객체를 사용한 게 아닌 동일한 id를 계속 사용하여 기존의 Marker들이 사라졌던 것입니다.
-
-이에 Marker마다 다른 id를 부여해주고 이 문제를 해결했습니다.
-
-이런 사소한 착각 하나로 인해 저는 많은 시간을 소비하였습니다. 이로 인해 사용하는 Method에 대한 정확한 파악이 필수라는 교훈을 얻었습니다.
+![KakaoTalk_20220325_091637088](https://user-images.githubusercontent.com/50730897/163183414-6b91f5c5-8df1-4fca-8df7-983621c883fd.jpg)
+![TMap_중심지찾기](https://user-images.githubusercontent.com/50730897/163183427-e0b82d2a-2b8b-4bb8-8f08-94d9d21c98c1.jpg)
+![TMap_중심지찾기](https://user-images.githubusercontent.com/50730897/163183479-5a3c0355-e483-4b02-9da4-9e0ff5e49d0d.jpg)
 
 
 # 프로젝트 시연 영상
